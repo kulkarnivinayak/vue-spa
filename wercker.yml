@@ -1,5 +1,5 @@
 
-box: node
+box: nodesource/trusty
 build:
     steps:
         - script:

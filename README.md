@@ -1,4 +1,4 @@
-[![wercker status](https://app.wercker.com/status/5f5a7cd29403cb593d97eb71ead9935c/m/master "wercker status")](https://app.wercker.com/project/byKey/5f5a7cd29403cb593d97eb71ead9935c)
+[![wercker status](https://app.wercker.com/status/5f5a7cd29403cb593d97eb71ead9935c/s/master "wercker status")](https://app.wercker.com/project/byKey/5f5a7cd29403cb593d97eb71ead9935c)
 [![Support](https://supporterhq.com/api/b/9ta2v0nem6g35roljw6pqkiop)](https://supporterhq.com/give/9ta2v0nem6g35roljw6pqkiop)
 
 # VueJS SPA

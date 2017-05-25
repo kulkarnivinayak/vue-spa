@@ -1,21 +1,16 @@
 
-box: node
+box: wercker/nodejs
 build:
+    steps:
+        - script:
+            name: install xvfb, firefox
+            code: sudo apt-get install xvfb firefox
+        - script:
+            name: install selenium wrapper
+            code: sudo npm i -g selenium-standalone@2.43 # 2.44 is bugged
+        - script:
+            name: start selenium
+            code: xvfb-run start-selenium > /dev/null & # Sleep needed?
 
-  steps:
-    - npm-install
-    - npm-test
-    - script:
-          name: install xvfb, firefox
-          code: sudo apt-get install xvfb firefox
-    - script:
-          name: install selenium wrapper
-          code: sudo npm i -g selenium-standalone@2.43 # 2.44 is bugged
-    - script:
-          name: start selenium
-          code: xvfb-run start-selenium > /dev/null & # Sleep needed?
-    - script:
-        name: echo nodejs information
-        code: |
-          echo "node version $(node -v) running"
-          echo "npm version $(npm -v) running"
+        - npm-install
+        - npm-test
